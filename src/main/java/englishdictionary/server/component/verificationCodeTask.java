@@ -99,7 +99,7 @@ public class verificationCodeTask{
         messageHelper.setTo(userEmail);
         messageHelper.setSubject(subject);
         messageHelper.setText(message, true );
-        messageHelper.setFrom(new InternetAddress("23trongtinh@gmail.com", "Dictionyari"));
+        messageHelper.setFrom(new InternetAddress("23trongtinh@gmail.com", "Dictionary"));
 
         emailSender.send(mimeMessage);
         scheduleDocumentDeletion(userEmail);

@@ -29,7 +29,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RestController
-@CrossOrigin(origins = "http://localhost:8088")
+@CrossOrigin(origins = "*")
 @RequestMapping("api/user/")
 public class UserController {
     private final verificationCodeTask verificationCodeTask;
